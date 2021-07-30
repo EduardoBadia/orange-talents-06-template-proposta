@@ -28,8 +28,6 @@ public class SolicitanteRequest {
 
     @Document
     @NotBlank
-    @UniqueValue(domainClass = Solicitante.class, fieldName="documento"
-                  , message="Este documento já existe")
     private String documento;
 
     public SolicitanteRequest(@NotBlank @Email String email, @NotBlank String nome,

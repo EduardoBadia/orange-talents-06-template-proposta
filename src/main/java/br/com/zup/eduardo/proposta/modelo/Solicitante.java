@@ -55,6 +55,10 @@ public class Solicitante {
         return id;
     }
 
+    public String getDocumento() {
+        return documento;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
